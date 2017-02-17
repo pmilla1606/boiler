@@ -1,6 +1,6 @@
-# es2015 boiler
+## es2015 boiler
 
-make all changes inside of /src/ as /dist/ will be wiped on builds
+make all changes inside of `/src/` as `/dist/` will be wiped on builds
 
 to run:
 
