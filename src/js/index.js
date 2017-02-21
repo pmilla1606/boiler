@@ -28,6 +28,11 @@ const OBJ = {
 };
 
 class App extends React.Component {
+
+  returnRandomNumber() {
+    return Math.random()
+  }
+
   render() {
     /**
      * Exercise:
@@ -46,7 +51,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <p>Hello World! {Math.random()}</p>
+        <p>Hello World! {this.returnRandomNumber()}</p>
       </div>
     )
   }
