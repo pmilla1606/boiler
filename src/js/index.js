@@ -33,6 +33,13 @@ class App extends React.Component {
     return Math.random()
   }
 
+  showSimpleArray(myArray){
+    for(var i=0; i < myArray.length; i++){
+      return myArray[i];
+    }
+  }
+
+
   render() {
     /**
      * Exercise:
@@ -48,11 +55,33 @@ class App extends React.Component {
      */
 
      // Code goes here
+     function showSimpleArray(myArray){
+        for(var i=0; i < myArray.length; i++){
+          console.log(myArray[i]);
+        }
+     }
+
+     function showComplexArray(myArray){
+      for(var i=0; i < myArray.length; i++){
+        console.log(myArray[i].name + '\'s favorite animal is a ' + myArray[i].fav);
+      }
+     }
+
+     function showObj(myObj){
+      for (var person in myObj) {
+        console.log(myObj[person]["name"] + " likes " + myObj[person]["fav"] + "s");
+      }
+    }
+
+     showSimpleArray(SIMPLE_ARRAY);
+     showComplexArray(COMPLEX_ARRAY);
+     showObj(OBJ);
 
     return (
       <div>
         <p>Hello World! {this.returnRandomNumber()}</p>
       </div>
+
     )
   }
 };
